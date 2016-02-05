@@ -1,0 +1,1 @@
+<img src="/img/01.gif" width="27" height="25"> <a href="/info/">Как заказать</a>

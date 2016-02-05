@@ -1,0 +1,1 @@
+<img src="/img/03.gif" width="27" height="25"> <a href="/info/dostavka/">Доставка</a>

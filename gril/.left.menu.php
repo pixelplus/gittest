@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Эконом", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Стандарт", 
+		"?view=8", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Премиум", 
+		"?view=9", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

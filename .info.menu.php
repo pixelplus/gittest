@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Доставка", 
+		"/info/dostavka/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оплата", 
+		"/info/oplata/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Выбор гриля", 
+		"/info/vibor-grila/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Аренда грилей", 
+		"/info/arenda-griley/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Гарантия", 
+		"/info/guarantee/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Консультация", 
+		"/info/consultation/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Рецепты", 
+		"/info/recipes/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

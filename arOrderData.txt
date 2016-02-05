@@ -1,0 +1,565 @@
+Array
+(
+    [ORDER] => Array
+        (
+            [ID] => 301
+            [LID] => s1
+            [PERSON_TYPE_ID] => 1
+            [PAYED] => N
+            [DATE_PAYED] => 
+            [EMP_PAYED_ID] => 
+            [CANCELED] => N
+            [DATE_CANCELED] => 
+            [EMP_CANCELED_ID] => 
+            [REASON_CANCELED] => 
+            [STATUS_ID] => N
+            [DATE_STATUS] => 2014-12-29 20:31:33
+            [EMP_STATUS_ID] => 
+            [PRICE_DELIVERY] => 0.00
+            [ALLOW_DELIVERY] => Y
+            [DATE_ALLOW_DELIVERY] => 2014-12-29 20:36:19
+            [EMP_ALLOW_DELIVERY_ID] => 1
+            [DEDUCTED] => N
+            [DATE_DEDUCTED] => 
+            [EMP_DEDUCTED_ID] => 
+            [REASON_UNDO_DEDUCTED] => 
+            [MARKED] => N
+            [DATE_MARKED] => 
+            [EMP_MARKED_ID] => 
+            [REASON_MARKED] => 
+            [RESERVED] => Y
+            [PRICE] => 9789.00
+            [CURRENCY] => RUB
+            [DISCOUNT_VALUE] => 0.00
+            [USER_ID] => 1
+            [PAY_SYSTEM_ID] => 1
+            [DELIVERY_ID] => 3
+            [DATE_INSERT] => 2014-12-29 20:31:33
+            [DATE_UPDATE] => 2015-01-09 18:10:55
+            [USER_DESCRIPTION] => Хочу, чтобы привезли бесплатно! Еще и мяса пару килограмм для тестовой готовки! Так не пойдет!
+            [ADDITIONAL_INFO] => 
+            [PS_STATUS] => 
+            [PS_STATUS_CODE] => 
+            [PS_STATUS_DESCRIPTION] => 
+            [PS_STATUS_MESSAGE] => 
+            [PS_SUM] => 
+            [PS_CURRENCY] => 
+            [PS_RESPONSE_DATE] => 
+            [COMMENTS] => 
+            [TAX_VALUE] => 0.00
+            [STAT_GID] => 
+            [SUM_PAID] => 0.00
+            [RECURRING_ID] => 
+            [PAY_VOUCHER_NUM] => 
+            [PAY_VOUCHER_DATE] => 
+            [LOCKED_BY] => 
+            [DATE_LOCK] => 
+            [RECOUNT_FLAG] => Y
+            [AFFILIATE_ID] => 
+            [DELIVERY_DOC_NUM] => 
+            [DELIVERY_DOC_DATE] => 
+            [UPDATED_1C] => N
+            [STORE_ID] => 
+            [ORDER_TOPIC] => 
+            [RESPONSIBLE_ID] => 
+            [DATE_PAY_BEFORE] => 
+            [DATE_BILL] => 
+            [ACCOUNT_NUMBER] => 301
+            [TRACKING_NUMBER] => 
+            [XML_ID] => 
+            [ID_1C] => 
+            [VERSION_1C] => 
+            [VERSION] => 13
+            [EXTERNAL_ORDER] => N
+            [DATE_STATUS_FORMAT] => 29.12.2014 20:31:33
+            [DATE_INSERT_FORMAT] => 29.12.2014
+            [DATE_UPDATE_FORMAT] => 09.01.2015 18:10:55
+            [DATE_LOCK_FORMAT] => 
+        )
+
+    [USER] => Array
+        (
+            [ID] => 1
+            [~ID] => 1
+            [TIMESTAMP_X] => 10.10.2014 15:36:47
+            [~TIMESTAMP_X] => 10.10.2014 15:36:47
+            [LOGIN] => pixelplus
+            [~LOGIN] => pixelplus
+            [PASSWORD] => ,nN95D|p365f4dee75cb9c3f611f4ca8b87323c2
+            [~PASSWORD] => ,nN95D|p365f4dee75cb9c3f611f4ca8b87323c2
+            [CHECKWORD] => dPwRbSd663cdcb4d589e8e8f13cbfa29f72f4f92
+            [~CHECKWORD] => dPwRbSd663cdcb4d589e8e8f13cbfa29f72f4f92
+            [ACTIVE] => Y
+            [~ACTIVE] => Y
+            [NAME] => Пиксель
+            [~NAME] => Пиксель
+            [LAST_NAME] => Плюс
+            [~LAST_NAME] => Плюс
+            [EMAIL] => support@pixelplus.ru
+            [~EMAIL] => support@pixelplus.ru
+            [LAST_LOGIN] => 09.01.2015 17:10:10
+            [~LAST_LOGIN] => 09.01.2015 17:10:10
+            [DATE_REGISTER] => 27.10.2013 17:28:43
+            [~DATE_REGISTER] => 27.10.2013 17:28:43
+            [LID] => s1
+            [~LID] => s1
+            [PERSONAL_PROFESSION] => 
+            [~PERSONAL_PROFESSION] => 
+            [PERSONAL_WWW] => 
+            [~PERSONAL_WWW] => 
+            [PERSONAL_ICQ] => 
+            [~PERSONAL_ICQ] => 
+            [PERSONAL_GENDER] => 
+            [~PERSONAL_GENDER] => 
+            [PERSONAL_BIRTHDATE] => 
+            [~PERSONAL_BIRTHDATE] => 
+            [PERSONAL_PHOTO] => 
+            [~PERSONAL_PHOTO] => 
+            [PERSONAL_PHONE] => +7 111 123- 45 -46
+            [~PERSONAL_PHONE] => +7 111 123- 45 -46
+            [PERSONAL_FAX] => 
+            [~PERSONAL_FAX] => 
+            [PERSONAL_MOBILE] => 
+            [~PERSONAL_MOBILE] => 
+            [PERSONAL_PAGER] => 
+            [~PERSONAL_PAGER] => 
+            [PERSONAL_STREET] => 
+            [~PERSONAL_STREET] => 
+            [PERSONAL_MAILBOX] => 
+            [~PERSONAL_MAILBOX] => 
+            [PERSONAL_CITY] => 
+            [~PERSONAL_CITY] => 
+            [PERSONAL_STATE] => 
+            [~PERSONAL_STATE] => 
+            [PERSONAL_ZIP] => 
+            [~PERSONAL_ZIP] => 
+            [PERSONAL_COUNTRY] => 0
+            [~PERSONAL_COUNTRY] => 0
+            [PERSONAL_NOTES] => 
+            [~PERSONAL_NOTES] => 
+            [WORK_COMPANY] => 
+            [~WORK_COMPANY] => 
+            [WORK_DEPARTMENT] => 
+            [~WORK_DEPARTMENT] => 
+            [WORK_POSITION] => 
+            [~WORK_POSITION] => 
+            [WORK_WWW] => 
+            [~WORK_WWW] => 
+            [WORK_PHONE] => 
+            [~WORK_PHONE] => 
+            [WORK_FAX] => 
+            [~WORK_FAX] => 
+            [WORK_PAGER] => 
+            [~WORK_PAGER] => 
+            [WORK_STREET] => 
+            [~WORK_STREET] => 
+            [WORK_MAILBOX] => 
+            [~WORK_MAILBOX] => 
+            [WORK_CITY] => 
+            [~WORK_CITY] => 
+            [WORK_STATE] => 
+            [~WORK_STATE] => 
+            [WORK_ZIP] => 
+            [~WORK_ZIP] => 
+            [WORK_COUNTRY] => 0
+            [~WORK_COUNTRY] => 0
+            [WORK_PROFILE] => 
+            [~WORK_PROFILE] => 
+            [WORK_LOGO] => 
+            [~WORK_LOGO] => 
+            [WORK_NOTES] => 
+            [~WORK_NOTES] => 
+            [ADMIN_NOTES] => 
+            [~ADMIN_NOTES] => 
+            [STORED_HASH] => 
+            [~STORED_HASH] => 
+            [XML_ID] => 
+            [~XML_ID] => 
+            [PERSONAL_BIRTHDAY] => 
+            [~PERSONAL_BIRTHDAY] => 
+            [EXTERNAL_AUTH_ID] => 
+            [~EXTERNAL_AUTH_ID] => 
+            [CHECKWORD_TIME] => 2014-10-10 15:36:47
+            [~CHECKWORD_TIME] => 2014-10-10 15:36:47
+            [SECOND_NAME] => 
+            [~SECOND_NAME] => 
+            [CONFIRM_CODE] => 
+            [~CONFIRM_CODE] => 
+            [LOGIN_ATTEMPTS] => 0
+            [~LOGIN_ATTEMPTS] => 0
+            [LAST_ACTIVITY_DATE] => 
+            [~LAST_ACTIVITY_DATE] => 
+            [AUTO_TIME_ZONE] => 
+            [~AUTO_TIME_ZONE] => 
+            [TIME_ZONE] => 
+            [~TIME_ZONE] => 
+            [TIME_ZONE_OFFSET] => 
+            [~TIME_ZONE_OFFSET] => 
+            [TITLE] => 
+            [~TITLE] => 
+            [IS_ONLINE] => N
+            [~IS_ONLINE] => N
+        )
+
+    [PERSON_TYPE] => Array
+        (
+            [ID] => 1
+            [LID] => s1
+            [NAME] => Физическое лицо
+            [SORT] => 0
+            [ACTIVE] => Y
+            [LIDS] => Array
+                (
+                    [0] => s1
+                )
+
+        )
+
+    [PAY_SYSTEM] => Array
+        (
+            [ID] => 1
+            [LID] => 
+            [CURRENCY] => 
+            [NAME] => Оплата наличными при получении заказа
+            [ACTIVE] => Y
+            [SORT] => 50
+            [DESCRIPTION] => Сумма заказа и доставки оплачивается наличными курьеру при получении заказа.
+            [PSA_ID] => 1
+            [PSA_NAME] => Оплата наличными при получении заказа
+            [PSA_ACTION_FILE] => /bitrix/modules/sale/payment/cash
+            [PSA_RESULT_FILE] => 
+            [PSA_NEW_WINDOW] => N
+            [PSA_PARAMS] => a:0:{}
+            [PSA_HAVE_PAYMENT] => Y
+            [PSA_HAVE_ACTION] => N
+            [PSA_HAVE_RESULT] => N
+            [PSA_HAVE_PREPAY] => N
+            [HAVE_RESULT_RECEIVE] => N
+            [PSA_ENCODING] => 
+        )
+
+    [DELIVERY] => Array
+        (
+            [ID] => 3
+            [NAME] => Курьером по Московской области
+            [LID] => s1
+            [PERIOD_FROM] => 0
+            [PERIOD_TO] => 0
+            [PERIOD_TYPE] => D
+            [WEIGHT_FROM] => 0
+            [WEIGHT_TO] => 0
+            [ORDER_PRICE_FROM] => 30000.00
+            [ORDER_PRICE_TO] => 0.00
+            [ORDER_CURRENCY] => RUB
+            [ACTIVE] => Y
+            [PRICE] => 0.00
+            [CURRENCY] => RUB
+            [SORT] => 100
+            [DESCRIPTION] => 
+            [LOGOTIP] => 
+            [STORE] => 
+            [NAME_FORMATTED] => Курьером по Московской области
+        )
+
+    [GROUP_PROPS] => Array
+        (
+            [1] => Array
+                (
+                    [NAME] => Данные для доставки
+                    [ITEMS] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 1514
+                                    [ORDER_ID] => 301
+                                    [ORDER_PROPS_ID] => 8
+                                    [NAME] => E-mail
+                                    [VALUE] => zooombieman@gmail.com
+                                    [CODE] => EMAIL
+                                    [PROPERTY_NAME] => E-mail
+                                    [TYPE] => TEXT
+                                    [PROPS_GROUP_ID] => 1
+                                    [INPUT_FIELD_LOCATION] => 0
+                                    [GROUP_NAME] => Данные для доставки
+                                    [IS_LOCATION] => N
+                                    [IS_EMAIL] => Y
+                                    [IS_PROFILE_NAME] => N
+                                    [IS_PAYER] => N
+                                    [GROUP_SORT] => 0
+                                    [ACTIVE] => Y
+                                    [UTIL] => N
+                                    [FOMATED] => Array
+                                        (
+                                            [NAME] => E-mail
+                                            [VALUE] => zooombieman@gmail.com
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [ID] => 1513
+                                    [ORDER_ID] => 301
+                                    [ORDER_PROPS_ID] => 1
+                                    [NAME] => Имя
+                                    [VALUE] => Анатолий
+                                    [CODE] => NAME
+                                    [PROPERTY_NAME] => Имя
+                                    [TYPE] => TEXT
+                                    [PROPS_GROUP_ID] => 1
+                                    [INPUT_FIELD_LOCATION] => 0
+                                    [GROUP_NAME] => Данные для доставки
+                                    [IS_LOCATION] => N
+                                    [IS_EMAIL] => N
+                                    [IS_PROFILE_NAME] => N
+                                    [IS_PAYER] => N
+                                    [GROUP_SORT] => 0
+                                    [ACTIVE] => Y
+                                    [UTIL] => N
+                                    [FOMATED] => Array
+                                        (
+                                            [NAME] => Имя
+                                            [VALUE] => Анатолий
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [ID] => 1515
+                                    [ORDER_ID] => 301
+                                    [ORDER_PROPS_ID] => 2
+                                    [NAME] => Фамилия
+                                    [VALUE] => Дубенчак
+                                    [CODE] => LAST_NAME
+                                    [PROPERTY_NAME] => Фамилия
+                                    [TYPE] => TEXT
+                                    [PROPS_GROUP_ID] => 1
+                                    [INPUT_FIELD_LOCATION] => 0
+                                    [GROUP_NAME] => Данные для доставки
+                                    [IS_LOCATION] => N
+                                    [IS_EMAIL] => N
+                                    [IS_PROFILE_NAME] => N
+                                    [IS_PAYER] => N
+                                    [GROUP_SORT] => 0
+                                    [ACTIVE] => Y
+                                    [UTIL] => N
+                                    [FOMATED] => Array
+                                        (
+                                            [NAME] => Фамилия
+                                            [VALUE] => Дубенчак
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [ID] => 1516
+                                    [ORDER_ID] => 301
+                                    [ORDER_PROPS_ID] => 3
+                                    [NAME] => Телефон
+                                    [VALUE] => +7777777776
+                                    [CODE] => PERSONAL_MOBILE
+                                    [PROPERTY_NAME] => Телефон
+                                    [TYPE] => TEXT
+                                    [PROPS_GROUP_ID] => 1
+                                    [INPUT_FIELD_LOCATION] => 0
+                                    [GROUP_NAME] => Данные для доставки
+                                    [IS_LOCATION] => N
+                                    [IS_EMAIL] => N
+                                    [IS_PROFILE_NAME] => N
+                                    [IS_PAYER] => N
+                                    [GROUP_SORT] => 0
+                                    [ACTIVE] => Y
+                                    [UTIL] => N
+                                    [FOMATED] => Array
+                                        (
+                                            [NAME] => Телефон
+                                            [VALUE] => +7777777776
+                                        )
+
+                                )
+
+                            [4] => Array
+                                (
+                                    [ID] => 1517
+                                    [ORDER_ID] => 301
+                                    [ORDER_PROPS_ID] => 7
+                                    [NAME] => Город и страна
+                                    [VALUE] => 2013
+                                    [CODE] => LOCATION
+                                    [PROPERTY_NAME] => Город и страна
+                                    [TYPE] => LOCATION
+                                    [PROPS_GROUP_ID] => 1
+                                    [INPUT_FIELD_LOCATION] => 0
+                                    [GROUP_NAME] => Данные для доставки
+                                    [IS_LOCATION] => Y
+                                    [IS_EMAIL] => N
+                                    [IS_PROFILE_NAME] => N
+                                    [IS_PAYER] => N
+                                    [GROUP_SORT] => 0
+                                    [ACTIVE] => Y
+                                    [UTIL] => N
+                                    [FOMATED] => Array
+                                        (
+                                            [NAME] => Город и страна
+                                            [VALUE] => Россия - Зеленоград
+                                        )
+
+                                )
+
+                            [5] => Array
+                                (
+                                    [ID] => 1518
+                                    [ORDER_ID] => 301
+                                    [ORDER_PROPS_ID] => 5
+                                    [NAME] => Улица, дом
+                                    [VALUE] => Ленина, дом 3
+                                    [CODE] => PERSONAL_STREET
+                                    [PROPERTY_NAME] => Улица, дом
+                                    [TYPE] => TEXT
+                                    [PROPS_GROUP_ID] => 1
+                                    [INPUT_FIELD_LOCATION] => 0
+                                    [GROUP_NAME] => Данные для доставки
+                                    [IS_LOCATION] => N
+                                    [IS_EMAIL] => N
+                                    [IS_PROFILE_NAME] => N
+                                    [IS_PAYER] => N
+                                    [GROUP_SORT] => 0
+                                    [ACTIVE] => Y
+                                    [UTIL] => N
+                                    [FOMATED] => Array
+                                        (
+                                            [NAME] => Улица, дом
+                                            [VALUE] => Ленина, дом 3
+                                        )
+
+                                )
+
+                            [6] => Array
+                                (
+                                    [ID] => 1519
+                                    [ORDER_ID] => 301
+                                    [ORDER_PROPS_ID] => 6
+                                    [NAME] => Квартира (организация)
+                                    [VALUE] => 465
+                                    [CODE] => FLAT
+                                    [PROPERTY_NAME] => Квартира (организация)
+                                    [TYPE] => TEXT
+                                    [PROPS_GROUP_ID] => 1
+                                    [INPUT_FIELD_LOCATION] => 0
+                                    [GROUP_NAME] => Данные для доставки
+                                    [IS_LOCATION] => N
+                                    [IS_EMAIL] => N
+                                    [IS_PROFILE_NAME] => N
+                                    [IS_PAYER] => N
+                                    [GROUP_SORT] => 0
+                                    [ACTIVE] => Y
+                                    [UTIL] => N
+                                    [FOMATED] => Array
+                                        (
+                                            [NAME] => Квартира (организация)
+                                            [VALUE] => 465
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [BASKET] => Array
+        (
+            [0] => Array
+                (
+                    [ID] => 12346
+                    [NAME] => Книга рецептов
+                    [DETAIL_PAGE_URL] => /gril/aksessuary%2Fweber%2Fknigi-o-grile/kniga-retseptov2.html
+                    [PRODUCT_ID] => 835
+                    [PRODUCT_PRICE_ID] => 336
+                    [CURRENCY] => RUB
+                    [CUSTOM_PRICE] => N
+                    [QUANTITY] => 1.00
+                    [ALL_PRICE] => 949.00
+                    [PRICE] => 949.00
+                    [SUM_PRICE] => 949.00
+                    [PROPS] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 17897
+                                    [BASKET_ID] => 12346
+                                    [NAME] => Артикул
+                                    [VALUE] => 50049
+                                    [CODE] => 
+                                    [SORT] => 100
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [ID] => 12345
+                    [NAME] => Набор мельниц WEBER STYLE
+                    [DETAIL_PAGE_URL] => /gril/aksessuary%2Fweber%2Fweber-style/nabor-melnits-weber-style.html
+                    [PRODUCT_ID] => 726
+                    [PRODUCT_PRICE_ID] => 227
+                    [CURRENCY] => RUB
+                    [CUSTOM_PRICE] => N
+                    [QUANTITY] => 1.00
+                    [ALL_PRICE] => 3850.00
+                    [PRICE] => 3850.00
+                    [SUM_PRICE] => 3850.00
+                    [PROPS] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 17896
+                                    [BASKET_ID] => 12345
+                                    [NAME] => Артикул
+                                    [VALUE] => 17093
+                                    [CODE] => 
+                                    [SORT] => 100
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [ID] => 12347
+                    [NAME] => ТЕЛЕЖКА-ПОДСТАВКА STANDART
+                    [DETAIL_PAGE_URL] => /gril/aksessuary%2Fweber%2Fpristavnye-stoliki-i-telezhki/telezhka-podstavka-standart.html
+                    [PRODUCT_ID] => 831
+                    [PRODUCT_PRICE_ID] => 332
+                    [CURRENCY] => RUB
+                    [CUSTOM_PRICE] => N
+                    [QUANTITY] => 1.00
+                    [ALL_PRICE] => 4990.00
+                    [PRICE] => 4990.00
+                    [SUM_PRICE] => 4990.00
+                    [PROPS] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ID] => 17898
+                                    [BASKET_ID] => 12347
+                                    [NAME] => Артикул
+                                    [VALUE] => 6549
+                                    [CODE] => 
+                                    [SORT] => 100
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [TOTAL_PRICE] => 9789
+)

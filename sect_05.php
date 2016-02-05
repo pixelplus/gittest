@@ -1,0 +1,1 @@
+<img src="/img/05.gif" width="27" height="25"> <a href="/contacts/">Контакты</a>

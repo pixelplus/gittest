@@ -1,0 +1,1 @@
+<img src="/img/02.gif" width="27" height="25"> <a href="/info/oplata/">Оплата</a>

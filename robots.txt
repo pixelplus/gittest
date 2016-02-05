@@ -1,0 +1,19 @@
+User-Agent: Yandex
+Disallow: /bitrix
+Disallow: /personal
+Disallow: /js/project
+Disallow: /ajax
+Disallow: /upload
+Disallow: /about/rekviziti/
+Disallow: /gril/gazovyj/?*
+Host: whogrill.ru
+Sitemap: http://whogrill.ru/sitemap_13.02.15.xml
+
+User-Agent: *
+Disallow: /bitrix
+Disallow: /personal
+Disallow: /js/project
+Disallow: /ajax
+Disallow: /about/rekviziti/
+Disallow: /gril/gazovyj/?*
+Sitemap: http://whogrill.ru/sitemap_13.02.15.xml

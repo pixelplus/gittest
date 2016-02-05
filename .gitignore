@@ -1,0 +1,5 @@
+/bitrix
+.idea/*
+.idea
+dbconn.php
+.settings.php

@@ -1,0 +1,251 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Title");
+?><?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.element", 
+	"recipes", 
+	array(
+		"IBLOCK_TYPE" => "content",
+		"IBLOCK_ID" => "5",
+		"ELEMENT_ID" => "",
+		"ELEMENT_CODE" => $_REQUEST["CODE"],
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_CODE" => "",
+		"HIDE_NOT_AVAILABLE" => "N",
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"OFFERS_LIMIT" => "0",
+		"SECTION_URL" => "",
+		"DETAIL_URL" => "",
+		"BASKET_URL" => "/personal/basket.php",
+		"ACTION_VARIABLE" => "action",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_GROUPS" => "Y",
+		"META_KEYWORDS" => "-",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"SET_TITLE" => "Y",
+		"SET_STATUS_404" => "N",
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"USE_ELEMENT_COUNTER" => "Y",
+		"PRICE_CODE" => array(
+		),
+		"USE_PRICE_COUNT" => "N",
+		"SHOW_PRICE_COUNT" => "1",
+		"PRICE_VAT_INCLUDE" => "Y",
+		"PRICE_VAT_SHOW_VALUE" => "N",
+		"PRODUCT_PROPERTIES" => array(
+		),
+		"USE_PRODUCT_QUANTITY" => "N",
+		"CONVERT_CURRENCY" => "N",
+		"LINK_IBLOCK_TYPE" => "",
+		"LINK_IBLOCK_ID" => "",
+		"LINK_PROPERTY_SID" => "",
+		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
+		"CHECK_SECTION_ID_VARIABLE" => "N",
+		"SET_BROWSER_TITLE" => "Y",
+		"SET_META_KEYWORDS" => "Y",
+		"SET_META_DESCRIPTION" => "Y",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"DISPLAY_COMPARE" => "N",
+		"ADD_PROPERTIES_TO_BASKET" => "Y",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N"
+	),
+	false
+);?>
+<div> 
+<? 
+global $arrRecMore;
+$arrRecMore = array(
+	"ACTIVE" => "Y",
+	"!CODE" => $_REQUEST["CODE"]
+);
+?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section", 
+	"more_recept", 
+	array(
+		"IBLOCK_TYPE" => "content",
+		"IBLOCK_ID" => "5",
+		"SECTION_ID" => "",
+		"SECTION_CODE" => "",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"ELEMENT_SORT_FIELD" => "RAND",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"ELEMENT_SORT_FIELD2" => "id",
+		"ELEMENT_SORT_ORDER2" => "desc",
+		"FILTER_NAME" => "arrRecMore",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"SHOW_ALL_WO_SECTION" => "Y",
+		"HIDE_NOT_AVAILABLE" => "N",
+		"PAGE_ELEMENT_COUNT" => "4",
+		"LINE_ELEMENT_COUNT" => "4",
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => ""
+		),
+		"OFFERS_LIMIT" => "4",
+		"SECTION_URL" => "",
+		"DETAIL_URL" => "",
+		"BASKET_URL" => "/personal/basket.php",
+		"ACTION_VARIABLE" => "action",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_GROUPS" => "N",
+		"META_KEYWORDS" => "-",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"DISPLAY_COMPARE" => "N",
+		"SET_TITLE" => "N",
+		"SET_STATUS_404" => "N",
+		"CACHE_FILTER" => "N",
+		"PRICE_CODE" => array(
+			0 => "BASE",
+		),
+		"USE_PRICE_COUNT" => "N",
+		"SHOW_PRICE_COUNT" => "1",
+		"PRICE_VAT_INCLUDE" => "Y",
+		"PRODUCT_PROPERTIES" => array(
+		),
+		"USE_PRODUCT_QUANTITY" => "N",
+		"CONVERT_CURRENCY" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "Товары",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => "",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"SPESIAL_TITLE" => "Другие рецепты блюд на гриле:",
+		"SET_BROWSER_TITLE" => "N",
+		"SET_META_KEYWORDS" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"ADD_PROPERTIES_TO_BASKET" => "Y",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N"
+	),
+	false,
+	array(
+		"ACTIVE_COMPONENT" => "Y"
+	)
+);?> </div>
+<div> 
+<? 
+global $arrRec;
+$arrRec = array(
+	"ACTIVE" => "Y",
+	"INCLUDE_SUBSECTIONS" => "Y",
+	"SECTION_ID" => array(39, 57, 66)
+);
+?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section", 
+	"recommend", 
+	array(
+		"IBLOCK_TYPE" => "content",
+		"IBLOCK_ID" => "8",
+		"SECTION_ID" => "",
+		"SECTION_CODE" => "",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"ELEMENT_SORT_FIELD" => "RAND",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"ELEMENT_SORT_FIELD2" => "id",
+		"ELEMENT_SORT_ORDER2" => "desc",
+		"FILTER_NAME" => "arrRec",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"SHOW_ALL_WO_SECTION" => "Y",
+		"HIDE_NOT_AVAILABLE" => "N",
+		"PAGE_ELEMENT_COUNT" => "4",
+		"LINE_ELEMENT_COUNT" => "4",
+		"PROPERTY_CODE" => array(
+			0 => "ART",
+			1 => "VES",
+			2 => "DLINA",
+			3 => "GARANTY",
+			4 => "DOPNAME",
+			5 => "NEW",
+			6 => "LIST",
+			7 => "HIT",
+			8 => "COLOR",
+			9 => "COLORS",
+			10 => "",
+		),
+		"OFFERS_LIMIT" => "5",
+		"SECTION_URL" => "",
+		"DETAIL_URL" => "",
+		"BASKET_URL" => "/personal/basket.php",
+		"ACTION_VARIABLE" => "action",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_GROUPS" => "N",
+		"META_KEYWORDS" => "-",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"DISPLAY_COMPARE" => "N",
+		"SET_TITLE" => "N",
+		"SET_STATUS_404" => "N",
+		"CACHE_FILTER" => "N",
+		"PRICE_CODE" => array(
+			0 => "BASE",
+		),
+		"USE_PRICE_COUNT" => "N",
+		"SHOW_PRICE_COUNT" => "1",
+		"PRICE_VAT_INCLUDE" => "Y",
+		"PRODUCT_PROPERTIES" => array(
+		),
+		"USE_PRODUCT_QUANTITY" => "N",
+		"CONVERT_CURRENCY" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "Товары",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => "",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"SPESIAL_TITLE" => "Для приготовления блюда рекомендуем грили:",
+		"SET_BROWSER_TITLE" => "N",
+		"SET_META_KEYWORDS" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"ADD_PROPERTIES_TO_BASKET" => "Y",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N"
+	),
+	false,
+	array(
+		"ACTIVE_COMPONENT" => "Y"
+	)
+);?> </div>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

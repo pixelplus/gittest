@@ -1,0 +1,331 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+  php_flag session.use_trans_sid off
+  #php_value display_errors 1
+  #php_value mbstring.internal_encoding UTF-8
+  php_value magic_quotes_gpc off
+  php_value max_input_vars 10000
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+  
+RewriteCond %{HTTP_HOST} ^xn--c1akegmnl9f\.xn--p1ai$ [NC]
+RewriteRule ^(.*)$ http://whogrill.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.whogrill\.ru$ [NC]
+RewriteRule ^(.*)$ http://whogrill.ru/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://whogrill.ru/ [R=301,L]
+
+Redirect 301 /gril/summit/ http://whogrill.ru/gril/
+Redirect 301 /gril/ugolnyj/smokey-joe-premium.html http://whogrill.ru/gril/ugolnyj/
+Redirect 301 /gril/ugolnyj/fireplace/fireplace.html http://whogrill.ru/gril/ugolnyj/fireplace/
+Redirect 301 /gril/sale/ http://whogrill.ru/
+
+Redirect 301 /gril/aksessuary/brikety-i-t-p/doski-dlya-kopcheniya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/doski-dlya-kopcheniya.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/gazovyy-kartridzh-.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/gazovyy-kartridzh-.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/gazovyy-perekhodniya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/gazovyy-perekhodniya.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/kubiki-der-dlya-rozzhiga-.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/kubiki-der-dlya-rozzhiga-.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/kubiki-dlya-rozzhiga.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/kubiki-dlya-rozzhiga.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/nabor-dlya-rozzhiga.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/nabor-dlya-rozzhiga.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/razdelitel-uglya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/razdelitel-uglya.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/shchepki-dlya-kopcheniya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/shchepki-dlya-kopcheniya.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/shchepki-dlya-kopcheniya-.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/shchepki-dlya-kopcheniya-.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/shchiptsy-dlya-uglya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/shchiptsy-dlya-uglya.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/starter-dlya-rozzhiga-uglya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/starter-dlya-rozzhiga-uglya.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/ugol-long-lasting-premium-briquettes.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/ugol-long-lasting-premium-briquettes.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/ugol-long-lasting-premium-briquettes-4h.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/ugol-long-lasting-premium-briquettes-4h.html
+Redirect 301 /gril/aksessuary/brikety-i-t-p/ugol-taygan-long-lasting-briquettes.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/ugol-taygan-long-lasting-briquettes.html
+Redirect 301 /gril/aksessuary/fartuki-i-rukavitsy/fartuk-dlya-raboty-s-grilem.html http://whogrill.ru/gril/aksessuary/weber/fartuki-i-rukavitsy/fartuk-dlya-raboty-s-grilem.html
+Redirect 301 /gril/aksessuary/fartuki-i-rukavitsy/perchatka-dlya-raboty-s-grilem.html http://whogrill.ru/gril/aksessuary/weber/fartuki-i-rukavitsy/perchatka-dlya-raboty-s-grilem.html
+Redirect 301 /gril/aksessuary/knigi-o-grile/kniga-retseptov1.html http://whogrill.ru/gril/aksessuary/weber/knigi-o-grile/kniga-retseptov1.html
+Redirect 301 /gril/aksessuary/knigi-o-grile/kniga-retseptov123456.html http://whogrill.ru/gril/aksessuary/weber/knigi-o-grile/kniga-retseptov123456.html
+Redirect 301 /gril/aksessuary/knigi-o-grile/kniga-retseptov2.html http://whogrill.ru/gril/aksessuary/weber/knigi-o-grile/kniga-retseptov2.html
+Redirect 301 /gril/aksessuary/ochistka/ochistitel-dlya-reshetki-dlya-prigotovleniya-ot-weber.html http://whogrill.ru/gril/aksessuary/weber/ochistka/ochistitel-dlya-reshetki-dlya-prigotovleniya-ot-weber.html
+Redirect 301 /gril/aksessuary/ochistka/ochistitelt-dlya-griley-ot-weber.html http://whogrill.ru/gril/aksessuary/weber/ochistka/ochistitelt-dlya-griley-ot-weber.html
+Redirect 301 /gril/aksessuary/ochistka/ochistitel-vysokokachestvennoy-stali-ot-weber.html http://whogrill.ru/gril/aksessuary/weber/ochistka/ochistitel-vysokokachestvennoy-stali-ot-weber.html
+Redirect 301 /gril/aksessuary/ochistka/shchetka-dlya-ochistki.html http://whogrill.ru/gril/aksessuary/weber/ochistka/shchetka-dlya-ochistki.html
+Redirect 301 /gril/aksessuary/ochistka/shchetka-dlya-ochistki-t-obraznaya1.html http://whogrill.ru/gril/aksessuary/weber/ochistka/shchetka-dlya-ochistki-t-obraznaya1.html
+Redirect 301 /gril/aksessuary/pristavnye-stoliki-i-telezhki/rabochiy-stolik-kettlemate.html http://whogrill.ru/gril/aksessuary/weber/pristavnye-stoliki-i-telezhki/rabochiy-stolik-kettlemate.html
+Redirect 301 /gril/aksessuary/pristavnye-stoliki-i-telezhki/telezhka-podstavka-standart.html http://whogrill.ru/gril/aksessuary/weber/pristavnye-stoliki-i-telezhki/telezhka-podstavka-standart.html
+Redirect 301 /gril/aksessuary/pristavnye-stoliki-i-telezhki/telezhka-standard.html http://whogrill.ru/gril/aksessuary/weber/pristavnye-stoliki-i-telezhki/telezhka-standard.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/alyuminevye-poddony-dlya-sbora-zhira.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/alyuminevye-poddony-dlya-sbora-zhira.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/alyuminevye-poddony-dlya-sbora-zhira-2.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/alyuminevye-poddony-dlya-sbora-zhira-2.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/alyuminevye-poddony-dlya-sbora-zhira-4.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/alyuminevye-poddony-dlya-sbora-zhira-4.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/kamen-dlya-pitstsy.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/kamen-dlya-pitstsy.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/keramicheskiy-protiven-dlya-grilya-2.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/keramicheskiy-protiven-dlya-grilya-2.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/nabor-mangal-set.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/nabor-mangal-set.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/nabor-mangal-set-2.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/nabor-mangal-set-2.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/podstavka-dlya-zapekaniya-ryby-i-ovoshchey-2.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/podstavka-dlya-zapekaniya-ryby-i-ovoshchey-2.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/podstavka-setka.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/podstavka-setka.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/reshetka-dlya-grilya-37-sm.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/reshetka-dlya-grilya-37-sm.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/reshetka-dlya-grilya-47-sm.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/reshetka-dlya-grilya-47-sm.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/reshetka-dlya-grilya-57-sm.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/reshetka-dlya-grilya-57-sm.html
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/tsifrovoy-karmannyy-termometr.html http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/tsifrovoy-karmannyy-termometr.html
+Redirect 301 /gril/aksessuary/shchiptsy-i-instrumenty/instrumenty-dlya-grilya-weber-style12.html http://whogrill.ru/gril/aksessuary/weber/weber-style/instrumenty-dlya-grilya-weber-style12.html
+Redirect 301 /gril/aksessuary/shchiptsy-i-instrumenty/nabor-priborov-dlya-grilya.html http://whogrill.ru/gril/aksessuary/weber/shchiptsy-i-instrumenty/nabor-priborov-dlya-grilya.html
+Redirect 301 /gril/aksessuary/shchiptsy-i-instrumenty/nabor-priborov-dlya-grilya-2.html http://whogrill.ru/gril/aksessuary/weber/shchiptsy-i-instrumenty/nabor-priborov-dlya-grilya-2.html
+Redirect 301 /gril/aksessuary/shchiptsy-i-instrumenty/podarochnyy-nabor-ktogril-amerika.html http://whogrill.ru/gril/aksessuary/weber/weber-style/podarochnyy-nabor-ktogril-amerika.html
+Redirect 301 /gril/aksessuary/shchiptsy-i-instrumenty/podarochnyy-nabor-ktogril-evropa.html http://whogrill.ru/gril/aksessuary/weber/weber-style/podarochnyy-nabor-ktogril-evropa.html
+Redirect 301 /gril/aksessuary/shchiptsy-i-instrumenty/shchiptsy1.html http://whogrill.ru/gril/aksessuary/weber/shchiptsy-i-instrumenty/shchiptsy1.html
+Redirect 301 /gril/aksessuary/sistema-bbq-gourmet/reshatka-dlya-griley-so-vstavkoy.html http://whogrill.ru/gril/aksessuary/weber/sistema-bbq-gourmet/reshatka-dlya-griley-so-vstavkoy.html
+Redirect 301 /gril/aksessuary/sistema-bbq-gourmet/reshetka-dlya-prigotovleniya-steykov.html http://whogrill.ru/gril/aksessuary/weber/sistema-bbq-gourmet/reshetka-dlya-prigotovleniya-steykov.html
+Redirect 301 /gril/aksessuary/sistema-bbq-gourmet/roster-dlya-kuritsy.html http://whogrill.ru/gril/aksessuary/weber/sistema-bbq-gourmet/roster-dlya-kuritsy.html
+Redirect 301 /gril/aksessuary/sistema-bbq-gourmet/skovoroda-dlya-sistemy.html http://whogrill.ru/gril/aksessuary/weber/sistema-bbq-gourmet/skovoroda-dlya-sistemy.html
+Redirect 301 /gril/aksessuary/sistema-bbq-gourmet/vok-dlya-sistemy.html http://whogrill.ru/gril/aksessuary/weber/sistema-bbq-gourmet/vok-dlya-sistemy.html
+Redirect 301 /gril/aksessuary/weber-style/nabor-melnits-weber-style.html http://whogrill.ru/gril/aksessuary/weber/weber-style/nabor-melnits-weber-style.html
+Redirect 301 /gril/aksessuary/weber-style/protven-dlya-zharki-pryamougolnyy-weber-style.html http://whogrill.ru/gril/aksessuary/weber/weber-style/protven-dlya-zharki-pryamougolnyy-weber-style.html
+Redirect 301 /gril/aksessuary/weber-style/roster-dlya-ptitsy.html http://whogrill.ru/gril/aksessuary/weber/weber-style/roster-dlya-ptitsy.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium10.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium10.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium11.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium11.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium12.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium12.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium13.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium13.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium2.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium2.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium3.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium3.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium5.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium5.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium6.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium6.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium7.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium7.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium8.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium8.html
+Redirect 301 /gril/aksessuary/zashchita/chekhol-premium9.html http://whogrill.ru/gril/aksessuary/weber/zashchita/chekhol-premium9.html
+Redirect 301 /gril/aksessuary-primo/stol-dubovyy-dlya-primo-junior.html http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/stol-dubovyy-dlya-primo-junior.html
+Redirect 301 /gril/aksessuary-primo/stol-dubrovyy-dlya-primo-xl-i-lardge.html http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/stol-dubrovyy-dlya-primo-xl-i-lardge.html
+Redirect 301 /gril/aksessuary-primo/stol-kiparisovyy-dlya-primo-junior.html http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/stol-kiparisovyy-dlya-primo-junior.html
+Redirect 301 /gril/aksessuary-primo/stol-kiparisovyy-dlya-primo-xl-i-large.html http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/stol-kiparisovyy-dlya-primo-xl-i-large.html
+Redirect 301 /gril/aksessuary-primo/stol-telezhka-so-stoleshnitsey-iz-kompozitnogo-polimera-dlya-grilya-primo-large.html http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/stol-telezhka-so-stoleshnitsey-iz-kompozitnogo-polimera-dlya-grilya-primo-large.html
+Redirect 301 /gril/aksessuary-primo/stol-telezhka-so-stoleshnitsey-iz-kompozitnogo-polimera-dlya-grilya-primo-xl.html http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/stol-telezhka-so-stoleshnitsey-iz-kompozitnogo-polimera-dlya-grilya-primo-xl.html
+Redirect 301 /gril/aksessuary-primo/stol-tikovyy-dlya-primo-oval-junior.html http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/stol-tikovyy-dlya-primo-oval-junior.html
+Redirect 301 /gril/ugolnyj/smokey-mountain-cooker/smokey-mountain-cooker2.html http://whogrill.ru/gril/ugolnyj/weber/smokey-mountain-cooker/smokey-mountain-cooker2.html
+Redirect 301 /gril/ugolnyj/smokey-mountain-cooker/smokey-mountain-cooker1.html http://whogrill.ru/gril/ugolnyj/weber/smokey-mountain-cooker/smokey-mountain-cooker1.html
+Redirect 301 /gril/ugolnyj/smokey-joe/smokey-joe-premium+1.html http://whogrill.ru/gril/ugolnyj/weber/smokey-joe/smokey-joe-premium+1.html
+Redirect 301 /gril/ugolnyj/primo/primo-xl.html http://whogrill.ru/gril/ugolnyj/primo/primo-xl.html
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/doski-dlya-kopcheniya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/doska-dlya-kopcheniya.html
+Redirect 301 /gril/ugolnyj/primo/primo-lardge.html http://whogrill.ru/gril/ugolnyj/primo/primo-lardge.html
+Redirect 301 /gril/ugolnyj/primo/primo-kamado.html http://whogrill.ru/gril/ugolnyj/primo/primo-kamado.html
+Redirect 301 /gril/ugolnyj/primo/primo-junior.html http://whogrill.ru/gril/ugolnyj/primo/primo-junior.html
+Redirect 301 /gril/ugolnyj/performer-gbs/performer-premium-gbs1.html http://whogrill.ru/gril/ugolnyj/weber/performer-gbs/performer-premium-gbs1.html
+Redirect 301 /gril/ugolnyj/performer-gbs/performer-gbs.html http://whogrill.ru/gril/ugolnyj/weber/performer-gbs/performer-gbs.html
+Redirect 301 /gril/ugolnyj/performer-gbs/performer-deluxe-gbs-gourmet.html http://whogrill.ru/gril/ugolnyj/weber/performer-gbs/performer-deluxe-gbs-gourmet.html
+Redirect 301 /gril/ugolnyj/one-touch-gold/one-touch-gold-black-57.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-gold/one-touch-gold-black-57.html
+Redirect 301 /gril/ugolnyj/one-touch-gold/one-touch-gold-black-47.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-gold/one-touch-gold-black-47.html
+Redirect 301 /gril/ugolnyj/one-touch/one-touch-original7.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/one-touch-original7.html
+Redirect 301 /gril/ugolnyj/one-touch/one-touch-original6.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/one-touch-original6.html
+Redirect 301 /gril/ugolnyj/one-touch/one-touch-original2.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/one-touch-original2.html
+Redirect 301 /gril/ugolnyj/one-touch/one-touch-original1.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/one-touch-original1.html
+Redirect 301 /gril/ugolnyj/master-touch-gbs/master-touch-gbs1.html http://whogrill.ru/gril/ugolnyj/weber/master-touch-gbs/master-touch-gbs1.html
+Redirect 301 /gril/ugolnyj/go-anywhere/go-anywhere1.html http://whogrill.ru/gril/ugolnyj/weber/go-anywhere/go-anywhere1.html
+Redirect 301 /gril/ugolnyj/fireplace/fireplace-new.html http://whogrill.ru/gril/ugolnyj/weber/fireplace/fireplace-new.html
+Redirect 301 /gril/ugolnyj/fireplace/fireplace1.html http://whogrill.ru/gril/ugolnyj/weber/fireplace/fireplace1.html
+Redirect 301 /gril/ugolnyj/compact-kettle/compact-kettle2.html http://whogrill.ru/gril/ugolnyj/weber/compact-kettle/compact-kettle2.html
+Redirect 301 /gril/ugolnyj/compact-kettle/compact-kettle1.html http://whogrill.ru/gril/ugolnyj/weber/compact-kettle/compact-kettle1.html
+Redirect 301 /gril/ugolnyj/bar-b-kettle/bar-b-kettle2.html http://whogrill.ru/gril/ugolnyj/weber/bar-b-kettle/bar-b-kettle2.html
+Redirect 301 /gril/ugolnyj/bar-b-kettle/bar-b-kettle.html http://whogrill.ru/gril/ugolnyj/weber/bar-b-kettle/bar-b-kettle.html
+Redirect 301 /gril/one-touch-premium/one-touch-premium-67.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-premium/one-touch-premium-67.html
+Redirect 301 /gril/one-touch-premium/one-touch-premium+57.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-premium/one-touch-premium+57.html
+Redirect 301 /gril/one-touch-premium/one-touch-premium+47.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-premium/one-touch-premium+47.html
+Redirect 301 /gril/gazovyj/summit/summit-s-670-gbs.html http://whogrill.ru/gril/gazovyj/weber/summit/summit-s-670-gbs.html
+Redirect 301 /gril/gazovyj/summit/summit-s-660.html http://whogrill.ru/gril/gazovyj/weber/summit/summit-s-660.html
+Redirect 301 /gril/gazovyj/summit/summit-s-470-gbs.html http://whogrill.ru/gril/gazovyj/weber/summit/summit-s-470-gbs.html
+Redirect 301 /gril/gazovyj/summit/summit-grill-center-gbs.html http://whogrill.ru/gril/gazovyj/weber/summit/summit-grill-center-gbs.html
+Redirect 301 /gril/gazovyj/summit/summit-e-670.html http://whogrill.ru/gril/gazovyj/weber/summit/summit-e-670.html
+Redirect 301 /gril/gazovyj/summit/summit-e-470-gbs.html http://whogrill.ru/gril/gazovyj/weber/summit/summit-e-470-gbs.html
+Redirect 301 /gril/gazovyj/spirit/spirit-s-320-premium-gbs.html http://whogrill.ru/gril/gazovyj/weber/spirit/spirit-s-320-premium-gbs.html
+Redirect 301 /gril/gazovyj/spirit/spirit-e-310-original.html http://whogrill.ru/gril/gazovyj/weber/spirit/spirit-e-310-original.html
+Redirect 301 /gril/gazovyj/spirit/spirit-e-210-classic.html http://whogrill.ru/gril/gazovyj/weber/spirit/spirit-e-210-classic.html
+Redirect 301 /gril/gazovyj/q-line/weber-q-3200.html http://whogrill.ru/gril/gazovyj/weber/q-line/weber-q-3200.html
+Redirect 301 /gril/gazovyj/q-line/weber-q-2200.html http://whogrill.ru/gril/gazovyj/weber/q-line/weber-q-2200.html
+Redirect 301 /gril/gazovyj/q-line/weber-q-120.html http://whogrill.ru/gril/gazovyj/weber/q-line/weber-q-120.html
+Redirect 301 /gril/gazovyj/genesis/genesis-s-330-gbs.html http://whogrill.ru/gril/gazovyj/weber/genesis/genesis-s-330-gbs.html
+Redirect 301 /gril/gazovyj/genesis/genesis-e-330-2.html http://whogrill.ru/gril/gazovyj/weber/genesis/genesis-e-330-2.html
+Redirect 301 /gril/gazovyj/genesis/genesis-e-330.html http://whogrill.ru/gril/gazovyj/weber/genesis/genesis-e-330.html
+Redirect 301 /gril/gazovyj/genesis/genesis-e-310.html http://whogrill.ru/gril/gazovyj/weber/genesis/genesis-e-310.html
+Redirect 301 /gril/elektricheskij/q-line-electro/weber-q-2400.html http://whogrill.ru/gril/elektricheskij/weber/q-line-electro/weber-q-2400.html
+Redirect 301 /gril/elektricheskij/q-line-electro/weber-q-240.html http://whogrill.ru/gril/elektricheskij/weber/q-line-electro/weber-q-240.html
+Redirect 301 /gril/elektricheskij/q-line-electro/weber-q-140-2.html http://whogrill.ru/gril/elektricheskij/weber/q-line-electro/weber-q-140-2.html
+Redirect 301 /gril/elektricheskij/q-line-electro/weber-q-140.html http://whogrill.ru/gril/elektricheskij/weber/q-line-electro/weber-q-140.html
+Redirect 301 /gril/gazovyj/o-grill/o-grill-1000.html http://whogrill.ru/gril/gazovyj/o-grill/o-grill1/o-grill-1000.html
+Redirect 301 /gril/aksessuary/weber/weber-style/instrumenty-dlya-grilya-weber-style.html http://whogrill.ru/gril/aksessuary/weber/shchiptsy-i-instrumenty/instrumenty-dlya-grilya-weber-style12.html
+Redirect 301 /gril/primo/primo-xl.html http://whogrill.ru/gril/ugolnyj/primo/
+Redirect 301 /gril/aksessuary/weber/ochistka/shchetka-dlya-ochistki1.html http://whogrill.ru/gril/aksessuary/weber/ochistka/
+Redirect 301 /gril/gazovyj/weber/spirit/spirit-e-320.html http://whogrill.ru/gril/gazovyj/weber/spirit/
+Redirect 301 /gril/elektricheskij/weber/q-line-electro/weber-q-140-3.html http://whogrill.ru/gril/elektricheskij/weber/q-line-electro/
+Redirect 301 /gril/complect-is-2-razdelitelei.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/gazovyj/weber/q-line/weber-q-220.html http://whogrill.ru/gril/gazovyj/weber/q-line/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-bilex-605.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-bilex-485.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-pro-825.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-triumph-495.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-triumph-410.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-le-3.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-triumph-325.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-pro-665.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon-lex-730.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/chehol-dlya-grills-napoleon.html http://whogrill.ru/gril/aksessuary/napoleon/chehli/
+Redirect 301 /gril/aksessuary/weber/fartuki-i-rukavitsy/nabor-iz-2-kh-perchatok-2.html http://whogrill.ru/gril/aksessuary/weber/fartuki-i-rukavitsy/
+Redirect 301 /gril/primo/primo-junior.html http://whogrill.ru/gril/ugolnyj/primo/
+Redirect 301 /gril/nabor-is-5-lotkov-ghirosbornikov.html http://whogrill.ru/gril/
+Redirect 301 /gril/chugunn-skovoroda.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/trubka-futlyar.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/gazovue-balonu/gazovui-balon-kompozitnii+12l.html http://whogrill.ru/gril/aksessuary/gazovye-ballony/
+Redirect 301 /gril/gazovue-balonu/gazovui-balon-12l.html http://whogrill.ru/gril/aksessuary/gazovye-ballony/
+Redirect 301 /gril/derghatel-kyhonni-prinadleghnosti.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/protiven-is-ghuguna-plancha-285.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /primo-kamado.html http://whogrill.ru/gril/ugolnyj/primo-grill/primo-kamado/
+Redirect 301 /performance-t22d.html http://whogrill.ru/gril/ugolnyj/weber/performer-gbs/
+Redirect 301 /gril/nabor-camen-dlya-pizza.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/nabor-kyhonni-prinadleghnostei.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/chygynni-poddon.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/stalnoy-grill-protiven.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /nabor-priborov-dlya-grilya-1.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /shchiptsy.html http://whogrill.ru/gril/aksessuary/shipci-i-instrumentu/
+Redirect 301 /gril/ugolnyj/charbroil/charcoal/charcoal-225.html http://whogrill.ru/gril/ugolnyj/charbroil/charcoal/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/razdelitel-dlya-ugolnykh-briketov.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/kubiki-dlya-rozzhiga-iz-opilok.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/ugolnyj/weber/one-touch/one-touch-original-silver-sinii.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-dlya-gazovogo-ballona-5kg.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-premium3.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/ugolnyj/charbroil/charcoal/charcoal-615.html http://whogrill.ru/gril/ugolnyj/charbroil/charcoal/
+Redirect 301 /gril/ugolnyj/weber/performer-gbs/performer-gbs-deluxe.html http://whogrill.ru/gril/ugolnyj/weber/performer-gbs/
+Redirect 301 /gril/gazovyj/weber/summit/summit-grill-center.html http://whogrill.ru/gril/gazovyj/weber/summit/
+Redirect 301 /gril/aksessuary/weber/shchiptsy-i-instrumenty/nabor-instrumentov-dlya-q-griley.html http://whogrill.ru/gril/aksessuary/weber/shchiptsy-i-instrumenty/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/shchepki-dlya-kopcheniya-oreh.html http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/gazovyj/weber/summit/summit-s-670.html http://whogrill.ru/gril/gazovyj/weber/summit/
+Redirect 301 /vertel-4-napoleon-665-825.html http://whogrill.ru/gril/aksessuary/napoleon/vertela-dlya-gazovix-grillei/
+Redirect 301 /gril/aksessuary/weber/knigi-o-grile/kniga-retseptov.html http://whogrill.ru/gril/aksessuary/weber/knigi-o-grile/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-premium5.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /vertel-4-napoleon-605-730.html http://whogrill.ru/gril/aksessuary/napoleon/vertela-dlya-gazovix-grillei/
+Redirect 301 /grill/one-touch-gold/one-touch-gold-black-57.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-gold/
+Redirect 301 /gril/protiven-is-ghuguna.html http://whogrill.ru/gril/aksessuary/protivni-i-gril-posuda/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-standard1.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-premium8.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/ugolnyj/weber/smokey-joe/smokey-joe-premium4.html http://whogrill.ru/gril/ugolnyj/weber/smokey-joe/
+Redirect 301 /gril/ugolnyj/weber/one-touch/one-touch-original2.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/
+Redirect 301 /gril/protiven-is-ghuguna-plancha.html http://whogrill.ru/gril/aksessuary/protivni-i-gril-posuda/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-premium4.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/ugolnyj/weber/one-touch-premium/one-touch-premium-7.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-premium/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/shchepki-dlya-kopcheniya-gikori.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/gazovyy-perekhodniya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-standard.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /vertel-2-triumph.html http://whogrill.ru/gril/aksessuary/napoleon/vertela-dlya-gazovix-grillei/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-premium1.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/aksessuary/napoleon/vertela-dlya-gazovix-grillei/vertel-4-napoleon-665-825.html http://whogrill.ru/gril/aksessuary/napoleon/vertela-dlya-gazovix-grillei/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/kocherga-dlya-uglya.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/
+Redirect 301 /gril/ugolnyj/weber/one-touch/one-touch-original-silver.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/
+Redirect 301 /gril/ugolnyj/weber/one-touch/one-touch-original4.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/
+Redirect 301 /gril/ugolnyj/weber/smokey-joe/smokey-joe-premium3.html http://whogrill.ru/gril/ugolnyj/weber/smokey-joe/
+Redirect 301 /gril/aksessuary/weber/zashchita/chekhol-premium2.html http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/aksessuary/weber/shchiptsy-i-instrumenty/nabor-instrumentov-dlya-voka.html http://whogrill.ru/gril/aksessuary/weber/shchiptsy-i-instrumenty/
+Redirect 301 /gril/ugolnyj/weber/bar-b-kettle/bar-b-kettle2.html http://whogrill.ru/gril/ugolnyj/weber/bar-b-kettle/
+Redirect 301 /gril/ugolnyj/weber/one-touch-premium/one-touch-premium5.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-premium/
+Redirect 301 /gril/primo/primo-lardge.html http://whogrill.ru/gril/ugolnyj/primo/
+Redirect 301 /gril/ugolnyj/weber/one-touch/one-touch-original8.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/ugol-taygan-long-lasting-briquettes.html http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/
+Redirect 301 /gril/aksessuary/weber/brikety-i-t-p/shchepki-dlya-kopcheniya-meskit.html http://whogrill.ru/gril/aksessuary/weber/
+Redirect 301 /gril/aksessuary/weber/pristavnye-stoliki-i-telezhki/bokovye-stoliki.html http://whogrill.ru/gril/aksessuary/weber/
+Redirect 301 /gril/ugolnyj/weber/one-touch/one-touch-original6.html http://whogrill.ru/gril/ugolnyj/weber/one-touch/
+Redirect 301 /gril/ugolnyj/weber/one-touch-premium/one-touch-premium1.html http://whogrill.ru/gril/ugolnyj/weber/one-touch-premium/
+Redirect 301 /gril/gazovyj/weber/q-line/weber-q-320.html http://whogrill.ru/gril/gazovyj/weber/q-line/
+Redirect 301 /vertel-4-napoleon-485-500.html http://whogrill.ru/gril/aksessuary/napoleon/vertela-dlya-gazovix-grillei/
+Redirect 301 /gril/gazovyj/weber/summit/summit-e-470.html http://whogrill.ru/gril/gazovyj/weber/summit/
+Redirect 301 /gril/ugolnyj/go-anywhere/ http://whogrill.ru/gril/ugolnyj/weber/go-anywhere/
+Redirect 301 /gril/ugolnyj/smokey-joe/ http://whogrill.ru/gril/ugolnyj/weber/smokey-joe/
+Redirect 301 /gril/ugolnyj/compact-kettle/ http://whogrill.ru/gril/ugolnyj/weber/compact-kettle/
+Redirect 301 /gril/ugolnyj/bar-b-kettle/ http://whogrill.ru/gril/ugolnyj/weber/bar-b-kettle/
+Redirect 301 /gril/ugolnyj/one-touch/ http://whogrill.ru/gril/ugolnyj/weber/one-touch/
+Redirect 301 /gril/one-touch-premium/ http://whogrill.ru/gril/ugolnyj/weber/one-touch-premium/
+Redirect 301 /gril/ugolnyj/master-touch-gbs/ http://whogrill.ru/gril/ugolnyj/weber/master-touch-gbs/
+Redirect 301 /gril/ugolnyj/performer-gbs/ http://whogrill.ru/gril/ugolnyj/weber/performer-gbs/
+Redirect 301 /gril/ugolnyj/smokey-mountain-cooker/ http://whogrill.ru/gril/ugolnyj/weber/smokey-mountain-cooker/
+Redirect 301 /gril/ugolnyj/fireplace/ http://whogrill.ru/gril/ugolnyj/weber/fireplace/
+Redirect 301 /gril/ugolnyj/one-touch-gold/ http://whogrill.ru/gril/ugolnyj/weber/one-touch-gold/
+Redirect 301 /gril/gazovyj/q-line/ http://whogrill.ru/gril/gazovyj/weber/q-line/
+Redirect 301 /gril/gazovyj/spirit/ http://whogrill.ru/gril/gazovyj/weber/spirit/
+Redirect 301 /gril/gazovyj/genesis/ http://whogrill.ru/gril/gazovyj/weber/genesis/
+Redirect 301 /gril/gazovyj/summit/ http://whogrill.ru/gril/gazovyj/weber/summit/
+Redirect 301 /gril/elektricheskij/q-line-electro/ http://whogrill.ru/gril/elektricheskij/weber/q-line-electro/
+Redirect 301 /gril/aksessuary/weber-style/ http://whogrill.ru/gril/aksessuary/weber/weber-style/
+Redirect 301 /gril/aksessuary/zashchita/ http://whogrill.ru/gril/aksessuary/weber/zashchita/
+Redirect 301 /gril/aksessuary/knigi-o-grile/ http://whogrill.ru/gril/aksessuary/weber/knigi-o-grile/
+Redirect 301 /gril/aksessuary/ochistka/ http://whogrill.ru/gril/aksessuary/weber/ochistka/
+Redirect 301 /gril/podarochnye-nabory-dlya-grilya/ http://whogrill.ru/gril/aksessuary/weber/podarochnye-nabory-dlya-grilya/
+Redirect 301 /gril/aksessuary/pristavnye-stoliki-i-telezhki/ http://whogrill.ru/gril/aksessuary/weber/pristavnye-stoliki-i-telezhki/
+Redirect 301 /gril/aksessuary/reshetki-i-protivni-dlya-grilya/ http://whogrill.ru/gril/aksessuary/weber/reshetki-i-protivni-dlya-grilya/
+Redirect 301 /gril/aksessuary/sistema-bbq-gourmet/ http://whogrill.ru/gril/aksessuary/weber/sistema-bbq-gourmet/
+Redirect 301 /gril/aksessuary/brikety-i-t-p/ http://whogrill.ru/gril/aksessuary/weber/brikety-i-t-p/
+Redirect 301 /gril/aksessuary/fartuki-i-rukavitsy/ http://whogrill.ru/gril/aksessuary/weber/fartuki-i-rukavitsy/
+Redirect 301 /gril/aksessuary/shchiptsy-i-instrumenty/ http://whogrill.ru/gril/aksessuary/weber/shchiptsy-i-instrumenty/
+Redirect 301 /gril/aksessuary-primo/ http://whogrill.ru/gril/aksessuary/weber/aksessuary-primo/
+Redirect 301 /gril/aksessuary/tundra-grill1/trybu/komplekt-trub-antique.html http://whogrill.ru/gril/ugolnyj/finskij/
+Redirect 301 /gril/aksessuary/tundra-grill1/trybu/komplekt-trub-black.html http://whogrill.ru/gril/ugolnyj/finskij/
+Redirect 301 /gril/aksessuary/tundra-grill1/trybu/truba-antique.html http://whogrill.ru/gril/ugolnyj/finskij/
+Redirect 301 /gril/aksessuary/tundra-grill1/trybu/truba-black.html http://whogrill.ru/gril/ugolnyj/finskij/
+Redirect 301 /gril/aksessuary/tundra-grill1/trybu/truba-s-zaslonkoi-black.html http://whogrill.ru/gril/ugolnyj/finskij/
+Redirect 301 /gril/aksessuary/big-green-egg1/nojki-i-rykoyatki/ http://whogrill.ru/gril/aksessuary/big-green-egg1/nojki-stoliki-rykoyatki/
+Redirect 301 /gril/aksessuary/pizza/ http://whogrill.ru/gril/aksessuary/dlya-piccy/
+Redirect 301 /gril/aksessuary/tundra-grill1/trybu/ http://whogrill.ru/gril/aksessuary/
+Redirect 301 /gril/aksessuary/tundra-grill1/ http://whogrill.ru/gril/aksessuary/
+
+Redirect 301 /info/recipes/bavarskie-kolbaski-na-grile.html http://whogrill.ru/info/recipes/
+Redirect 301 /info/recipes/klassicheskie-burgery-na-rzhanom-khlebe.html http://whogrill.ru/info/recipes/
+
+RewriteCond %{QUERY_STRING} ^ID=193$
+RewriteRule ^(.*)$  http://whogrill.ru/info/recipes/bavarskie-kolbaski-na-grile.html? [R=301,L]
+
+RewriteCond %{QUERY_STRING} ^ID=192$
+RewriteRule ^(.*)$  http://whogrill.ru/info/recipes/klassicheskie-burgery-na-rzhanom-khlebe.html? [R=301,L]
+
+Redirect 301 /gril/ugolnyj/tundra-grill/high-antique/ http://whogrill.ru/gril/ugolnyj/finskij/
+Redirect 301 /gril/ugolnyj/tundra-grill/apetivo-high/ http://whogrill.ru/gril/ugolnyj/finskij/apetivo-high/
+Redirect 301 /gril/ugolnyj/tundra-grill/hd/ http://whogrill.ru/gril/ugolnyj/finskij/hd/
+Redirect 301 /gril/ugolnyj/tundra-grill/horna/ http://whogrill.ru/gril/ugolnyj/finskij/horna/
+Redirect 301 /gril/helsinki/ http://whogrill.ru/gril/ugolnyj/valugrilli/helsinki/
+Redirect 301 /gril/moderno/ http://whogrill.ru/gril/ugolnyj/valugrilli/moderno/
+Redirect 301 /gril/5/ http://whogrill.ru/
+Redirect 301 /gril/ugolnyj/tundra-grill/ http://whogrill.ru/gril/ugolnyj/finskij/
+
+
+Redirect 301 /ugolniy_gril http://whogrill.ru/gril/ugolnyj/
+Redirect 301 /gril/steel-grill/ http://whogrill.ru/
+Redirect 301 /thermos-c21.html http://whogrill.ru/
+
+
+#Redirect 301 /gril/sale/ http://whogrill.ru/
+Redirect 301 /gril/primo/ http://whogrill.ru/
+Redirect 301 /gril/grafit/ http://whogrill.ru/
+Redirect 301 /gril/vgp/ http://whogrill.ru/
+Redirect 301 /gril/aksessuary/big-green-egg1/stoliki-i-polki/ http://whogrill.ru/gril/aksessuary/big-green-egg1/
+Redirect 301 /gril/perfomance/ http://whogrill.ru/
+Redirect 301 /gril/weber/ http://whogrill.ru/
+Redirect 301 /gril/genesis/ http://whogrill.ru/
+Redirect 301 /gril/thermos/ http://whogrill.ru/
+Redirect 301 /gril/tampere/ http://whogrill.ru/
+Redirect 301 /gril/ultra/ http://whogrill.ru/
+
+RewriteCond %{QUERY_STRING} ^filter=9$ [NC]
+RewriteRule ^/gril/elektricheskij/$ /gril/elektricheskij/? [R=301,L] 
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"  
+</IfModule>

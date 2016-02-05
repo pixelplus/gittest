@@ -1,0 +1,10 @@
+_CIBElement Object
+(
+    [fields] => Array
+        (
+            [NOP] => 0
+            [~NOP] => 0
+        )
+
+    [props] => 
+)
